@@ -1,23 +1,30 @@
 import Link from 'next/link'
 import styled from 'styled-components'
 import styles from '../styles/Navbar.module.scss'
+import HarvestMoonLogo from './HarvestMoonLogo'
 
 const Navbar = (props) => {
-  console.log(props)
   const NavbarLink = styled.a`
     font-size: 26px;
-    padding: 5px 0;
+    padding: 2px 0;
     color: ${props.color};
     transition-duration: 0.3s;
+    border-bottom: rgb(232, 112, 125);
 
     &:hover {
-      color: white;
+      opacity: 1;
+      border-bottom: rgb(232, 112, 125) solid 3px;
     }
   `
   //
 
   return (
     <nav className={styles.navbarWrapper}>
+      <HarvestMoonLogo
+        color='rgba(255, 255, 255, .8)'
+        width='200'
+        class='indexLogo'
+      />
       <ul className={styles.navbarList}>
         <li className={styles.navbarItem}>
           <Link href='/' passHref>
@@ -25,7 +32,7 @@ const Navbar = (props) => {
           </Link>
         </li>
         <li className={styles.navbarItem}>
-          <Link href='/' passHref>
+          <Link href='#aboutus' passHref>
             <NavbarLink>about</NavbarLink>
           </Link>
         </li>

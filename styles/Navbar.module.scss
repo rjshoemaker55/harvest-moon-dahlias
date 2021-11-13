@@ -1,11 +1,18 @@
 .navbarWrapper {
-  position: absolute;
+  position: fixed;
+  width: 100vw;
   right: 20px;
   top: 20px;
   text-align: right;
-  padding: 10px 10px 10px 50px;
+  z-index: 20;
+}
+
+.navbarList {
+  padding: 10px 10px 10px 60px;
   transition-duration: 0.8s;
   border-radius: 10px;
+  position: absolute;
+  right: 20px;
 
   &:hover {
     background: rgba(119, 119, 119, 0.3);
@@ -16,6 +23,6 @@
   list-style: none;
 
   & + .navbarItem {
-    margin-top: 6px;
+    margin-top: 10px;
   }
 }

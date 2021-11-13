@@ -1,13 +1,12 @@
 .indexPageWrapper {
   height: 100vh;
   width: 100vw;
-  background-image: linear-gradient(
-    to bottom right,
-    rgb(231, 113, 125),
-    rgb(232, 160, 112),
-    rgb(232, 218, 113),
-    white
-  );
+}
+
+.indexWideWrapper {
+  height: 100vh;
+  width: 200vw;
+  display: flex;
 }
 
 .indexContentWrapper {
@@ -24,7 +23,7 @@
 }
 
 .indexSubheader {
-  color: rgb(53, 53, 53);
+  color: var(--darkGray);
   font-weight: 600;
   margin-top: 30px;
   padding-left: 10px;
@@ -47,4 +46,61 @@
   bottom: 0;
   right: 30px;
   width: 35%;
+}
+
+.scrollRightButtonWrapper {
+  position: absolute;
+  height: 70px;
+  right: 30px;
+  top: 45%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+}
+
+.scrollRightButton {
+  color: var(--darkGray);
+  height: 80px;
+  cursor: pointer;
+}
+
+.scrollRightButtonText {
+  color: var(--darkGray);
+  transform: rotate(-90deg);
+  margin-right: -30px;
+}
+
+.indexSidePage {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.indexSidePageWrapper {
+  margin-top: 170px;
+  margin-bottom: 200px;
+  display: flex;
+}
+
+.indexSidePageHeader {
+  margin: auto;
+  font-size: 50px;
+  color: white;
+  font-weight: bold;
+  font-size: 4em;
+  text-shadow: rgb(184, 61, 70) 2px 2px;
+}
+
+.indexSidePageFooter {
+  position: absolute;
+  color: var(--darkGray);
+  opacity: 0.6;
+  bottom: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  line-height: 0.5;
+  width: 100%;
+  font-size: 110px;
+  text-align: center;
+  letter-spacing: 8px;
 }

@@ -3,13 +3,19 @@
   right: 20px;
   top: 20px;
   text-align: right;
+  padding: 10px 10px 10px 50px;
+  transition-duration: 0.8s;
+  border-radius: 10px;
+
+  &:hover {
+    background: rgba(119, 119, 119, 0.3);
+  }
 }
 
 .navbarItem {
   list-style: none;
-}
 
-.navbarLink {
-  font-size: 26px;
-  padding: 5px 0;
+  & + .navbarItem {
+    margin-top: 6px;
+  }
 }

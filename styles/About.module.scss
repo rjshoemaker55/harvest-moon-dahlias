@@ -1,0 +1,67 @@
+.aboutPage {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.aboutPageWrapper {
+  margin-top: 40px;
+}
+
+.aboutPageHeader {
+  margin: auto;
+  text-align: center;
+  font-size: 50px;
+  color: white;
+  font-weight: bold;
+  font-size: 4em;
+  text-shadow: rgb(184, 61, 70) 2px 2px;
+}
+
+.aboutPageFooter {
+  position: absolute;
+  color: var(--darkGray);
+  opacity: 0.6;
+  bottom: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  line-height: 0.5;
+  width: 100%;
+  font-size: 110px;
+  text-align: center;
+  letter-spacing: 8px;
+}
+
+.aboutContentWrapper {
+  width: 80%;
+  margin: 150px auto 0px auto;
+}
+
+.aboutBlockWrapper {
+  display: flex;
+}
+
+.aboutBlockText {
+  margin-left: 40px;
+  flex: 3;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.aboutBlockHeader {
+  color: black;
+  font-size: 2em;
+  padding-bottom: 7px;
+}
+
+.aboutImage {
+  border-radius: 50%;
+  flex: 1;
+}
+
+.aboutBlockBody {
+  font-size: 1.3em;
+  color: var(--darkGray);
+  margin-top: 15px;
+}

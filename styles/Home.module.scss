@@ -3,12 +3,6 @@
   width: 100vw;
 }
 
-.indexWideWrapper {
-  height: 100vh;
-  width: 200vw;
-  display: flex;
-}
-
 .indexContentWrapper {
   position: absolute;
   left: 10%;
@@ -68,39 +62,4 @@
   color: var(--darkGray);
   transform: rotate(-90deg);
   margin-right: -30px;
-}
-
-.indexSidePage {
-  width: 100vw;
-  height: 100vh;
-  position: relative;
-}
-
-.indexSidePageWrapper {
-  margin-top: 170px;
-  margin-bottom: 200px;
-  display: flex;
-}
-
-.indexSidePageHeader {
-  margin: auto;
-  font-size: 50px;
-  color: white;
-  font-weight: bold;
-  font-size: 4em;
-  text-shadow: rgb(184, 61, 70) 2px 2px;
-}
-
-.indexSidePageFooter {
-  position: absolute;
-  color: var(--darkGray);
-  opacity: 0.6;
-  bottom: 0;
-  margin-bottom: 0;
-  padding-bottom: 0;
-  line-height: 0.5;
-  width: 100%;
-  font-size: 110px;
-  text-align: center;
-  letter-spacing: 8px;
 }

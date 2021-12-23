@@ -1,39 +1,13 @@
 import Head from 'next/head'
-import styled from 'styled-components'
-import { useRef, useEffect, useState, useCallback } from 'react'
+import { useRef } from 'react'
 import Navbar from '../components/Navbar'
 import Home from '../components/Home'
 import About from '../components/About'
+import PageBg from '../components/PageBg'
 import styles from '../styles/Index.module.scss'
 
 export default function Index() {
-  const [scrollPos, setScrollPos] = useState(-365)
-  const [x, setX] = useState(0)
   const aboutPage = useRef()
-
-  const handleScroll = () => {
-    const position = window.pageXOffset
-    setScrollPos(position)
-  }
-
-  const IndexBg = styled.div`
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 0;
-    height: 100vh;
-    width: 100vw;
-    background-image: linear-gradient(
-      ${scrollPos / 8}deg,
-      rgb(231, 113, 125),
-      rgb(232, 160, 112),
-      rgb(232, 218, 113)
-    );
-  `
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll, { passive: true })
-  })
 
   return (
     <div className={styles.container}>
@@ -43,8 +17,6 @@ export default function Index() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <div className={styles.indexWideWrapper}>
-        <Navbar color='rgba(255, 255, 255, 1)' />
-        <IndexBg />
         <Home
           scrollPage={() =>
             aboutPage.current.scrollIntoView({ behavior: 'smooth' })

@@ -17,7 +17,7 @@ const About = (props) => {
             />
             <div className={styles.aboutBlockText}>
               <h3 className={styles.aboutBlockHeader}>
-                We are a family owned, local dahlia nursery
+                Harvest moon is a family owned, local dahlia nursery
               </h3>
               <p className={styles.aboutBlockBody}>
                 Located in Howell, New Jersey, we work all through the year to
@@ -25,6 +25,33 @@ const About = (props) => {
                 unique varieties, as well as preparing custom orders for
                 clients' events.
               </p>
+            </div>
+          </div>
+          <div className={styles.aboutImagesGrid}>
+            <Image
+              className={styles.aboutGridImage}
+              src='/images/instagram-images/insta-image1.png'
+              width={300}
+              height={300}
+              objectFit='cover'
+            />
+            <Image
+              className={styles.aboutGridImage}
+              src='/images/instagram-images/insta-image2.png'
+              width={300}
+              height={300}
+              objectFit='cover'
+            />
+            <Image
+              className={styles.aboutGridImage}
+              src='/images/instagram-images/insta-image3.png'
+              width={300}
+              height={300}
+              objectFit='cover'
+            />
+            <div className={styles.aboutGridEst}>
+              <p className={styles.aboutEstText}>est</p>
+              <p className={styles.aboutEstDate}>2021</p>
             </div>
           </div>
         </div>

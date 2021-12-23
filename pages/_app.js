@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import { useRef, useState, useEffect } from 'react'
 import styled from 'styled-components'
+import PageBg from '../components/PageBg'
 import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }) {
@@ -14,6 +15,7 @@ function MyApp({ Component, pageProps }) {
           rel='stylesheet'
         />
       </Head>
+      <PageBg />
       <Component {...pageProps} />
     </>
   )

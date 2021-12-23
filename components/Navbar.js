@@ -37,8 +37,8 @@ const Navbar = (props) => {
           </Link>
         </li>
         <li className={styles.navbarItem}>
-          <Link href='/' passHref>
-            <NavbarLink>events</NavbarLink>
+          <Link href='/products' passHref>
+            <NavbarLink>products</NavbarLink>
           </Link>
         </li>
         <li className={styles.navbarItem}>

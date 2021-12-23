@@ -23,7 +23,7 @@ const About = (props) => {
                 Located in Howell, New Jersey, we work all through the year to
                 care for our plants. We are constantly working to develop new,
                 unique varieties, as well as preparing custom orders for
-                clients' events.
+                clients&apos; events.
               </p>
             </div>
           </div>
